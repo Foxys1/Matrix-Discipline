@@ -1,0 +1,14 @@
+{
+  "name": "matrix-discipline",
+  "version": "1.0.0",
+  "description": "Десктопное приложение для жесткого самоконтроля и трекинга привычек.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . MatrixDiscipline --platform=win32 --arch=x64 --overwrite"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-packager": "^17.1.1"
+  }
+}
