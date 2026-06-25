@@ -1,140 +1,173 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Архитектура Воли</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Архитектура Воли | Discipline Matrix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="aurora-bg"></div>
 
-<div id="scrollProgress"></div>
-<div class="grain-overlay"></div>
-<div id="toast-container"></div>
-<canvas id="confettiCanvas"></canvas>
+    <div id="splashScreen">
+        <canvas id="splashCanvas"></canvas>
+        <div class="splash-title-wrap" id="splashTitleWrap">
+            <h1 id="splashTitle">АРХИТЕКТУРА ВОЛИ</h1>
+            <div id="splashShimmer" class="splash-shimmer"></div>
+            <div id="splashDivider" class="splash-divider"></div>
+            <div id="splashTagline" class="splash-tagline">DISCIPLINE MATRIX</div>
+        </div>
+    </div>
 
-<div id="onboarding">
-    <div class="onboarding-inner">
-        <div class="logo-big">Архитектура Воли</div>
-        <div class="ob-step">
-            <h2 id="questionText">Анализ текущего состояния...</h2>
-            <div class="answers" id="answersContainer"></div>
-            <div class="ob-progress">
-                <div class="ob-bar"><div class="ob-fill" id="obFill"></div></div>
-                <span id="obCounter">1 / 4</span>
+    <div id="godModeOverlay">
+        <div class="god-mode-text">РЕЖИМ ГЛУБОКОЙ РАБОТЫ</div>
+        <div class="god-mode-timer" id="godModeTimer">90:00</div>
+        <div class="god-mode-text">НЕ ОТВЛЕКАЙСЯ. ТВОРИ.</div>
+        <button class="btn btn-primary god-mode-exit" onclick="toggleGodMode(false)">ВЫЙТИ ИЗ РЕЖИМА</button>
+    </div>
+
+    <div id="onboarding">
+        <div class="onboarding-inner">
+            <div class="logo-big" data-i18n="logo_title">Архитектура Воли</div>
+            <div class="ob-step">
+                <h2 id="questionText"></h2>
+                <div class="answers" id="answersContainer"></div>
+                <div class="ob-progress">
+                    <div class="ob-bar"><div class="ob-fill" id="obFill"></div></div>
+                    <span id="obCounter">1 / 4</span>
+                </div>
+            </div>
+            <div style="margin-top: 30px;">
+                <select id="obLangSelect" onchange="changeObLanguage(this.value)"></select>
             </div>
         </div>
     </div>
-</div>
 
-<div class="app-container">
-    <header>
-        <div class="brand">
-            <div class="brand-icon">A</div>
-            <div>
-                <h1>Матрица Дисциплины</h1>
-                <span>Управление биологическим скафандром</span>
-            </div>
-        </div>
-        <div class="header-stats">
-            <div class="h-stat">
-                <span class="h-label">Дофамин</span>
-                <div class="h-bar"><div class="h-fill" id="dopamineBar"></div></div>
-                <span class="h-value" id="dopamineVal">50%</span>
-            </div>
-            <div class="h-stat">
-                <span class="h-label">Тестостерон</span>
-                <div class="h-bar"><div class="h-fill test" id="testBar"></div></div>
-                <span class="h-value" id="testVal">50%</span>
-            </div>
-        </div>
-    </header>
+    <div id="scrollProgress"></div>
+    <div class="grain-overlay"></div>
+    <div id="toast-container"></div>
+    <canvas id="confettiCanvas"></canvas>
 
-    <aside class="panel left-panel" id="leftPanel">
-        <div class="section-title">Мастер / Ядро</div>
-        <div class="photo-wrap" id="photoContainer">
-            <img id="masterPhotoImg" alt="Arsen Markaryan">
-            <div class="photo-ring"></div>
-            <div class="drop-zone-hint">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
-                <span>Перетащи фото или аудио сюда</span>
-            </div>
-        </div>
-
-        <div class="quote-card">
-            <div class="quote-text" id="arsenQuote">Загрузка протокола...</div>
-            <div class="quote-divider"></div>
-            <div class="quote-fact" id="scienceFact">Калибровка нейробиологии...</div>
-        </div>
-        <button class="btn btn-ghost btn-full" onclick="loadWisdom()">Следующий протокол</button>
-
-        <div class="section-title" style="margin-top: 10px;">Голос Воли</div>
-        <div class="player">
-            <div class="player-main">
-                <button class="player-btn" onclick="changeTrack(-1)">⏮</button>
-                <button class="player-play" id="playBtn" onclick="toggleAudio()">▶</button>
-                <button class="player-btn" onclick="changeTrack(1)">⏭</button>
-                <div class="player-meta">
-                    <div id="trackName">Нет данных</div>
-                    <div id="trackTime">0:00 / 0:00</div>
+    <div class="app-container">
+        <header>
+            <div class="brand">
+                <div class="brand-icon">A</div>
+                <div>
+                    <h1 data-i18n="app_title">Матрица Дисциплины</h1>
+                    <span data-i18n="app_subtitle">Управление биологическим скафандром</span>
                 </div>
             </div>
-            <div class="player-progress" id="progressBar" onclick="seekAudio(event)">
-                <div class="player-progress-fill" id="progressFill"></div>
+            <div class="header-stats">
+                <div class="h-stat">
+                    <span class="h-label" data-i18n="dopamine">Дофамин</span>
+                    <div class="h-bar"><div class="h-fill" id="dopamineBar"></div></div>
+                    <span class="h-value" id="dopamineVal">50%</span>
+                </div>
+                <div class="h-stat">
+                    <span class="h-label" data-i18n="testosterone">Тестостерон</span>
+                    <div class="h-bar"><div class="h-fill test" id="testBar"></div></div>
+                    <span class="h-value" id="testVal">50%</span>
+                </div>
+                <select id="langSelect" onchange="changeLanguage(this.value)"></select>
             </div>
-            <div class="player-volume">
-                <span>Громкость</span>
-                <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.8">
-                <span id="volValue">80%</span>
+        </header>
+
+        <div class="panel left-panel" id="leftPanel">
+            <div>
+                <div class="section-title" data-i18n="master_core">Мастер / Ядро</div>
+                <div class="photo-wrap" id="photoContainer">
+                    <div class="photo-ring"></div>
+                    <img id="masterPhotoImg" alt="Master">
+                    <div class="drop-zone-hint">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12" /></svg>
+                        <span data-i18n="drop_hint">Перетащи фото или аудио сюда</span>
+                    </div>
+                </div>
             </div>
-            <button class="btn btn-ghost btn-full" onclick="scanFolder()">Сканировать папку</button>
-            <div class="track-list" id="trackListContainer"></div>
-        </div>
-    </aside>
 
-    <main class="panel center-panel">
-        <div class="day-counter">
-            <div class="day-number" id="dayNumber">1</div>
-            <div class="day-label">День в Матрице</div>
-        </div>
-        <div class="rank-block">
-            <div class="rank-label">Текущий статус</div>
-            <div class="rank-value" id="rankDisplay">Хаос</div>
-            <div class="rank-line"><div class="rank-fill" id="rankProgress"></div></div>
-        </div>
-        <div class="section-title">Протоколы</div>
-        <div class="add-task">
-            <input type="text" id="taskInput" placeholder="Добавить новый протокол..." onkeypress="handleKeyPress(event)">
-            <button class="btn btn-primary" onclick="addHabit()">Добавить</button>
-        </div>
-        <ul class="habit-list" id="habitList"></ul>
-    </main>
-
-    <aside class="panel right-panel">
-        <div class="section-title">Парасимпатика</div>
-        <div class="breath-block">
-            <div class="breath-circle-wrap">
-                <div class="breath-circle" id="breathCore"></div>
-                <div class="breath-label" id="breathText">Готов</div>
-                <div class="breath-timer" id="breathTimer"></div>
+            <div class="quote-card">
+                <div class="quote-text" id="arsenQuote"></div>
+                <div class="quote-divider"></div>
+                <div class="quote-fact" id="scienceFact"></div>
+                <button class="btn btn-ghost btn-full" style="margin-top: 15px;" onclick="nextWisdom()" data-i18n="next_protocol">Следующий протокол</button>
             </div>
-            <button class="btn btn-full" id="breathBtn" onclick="toggleBreathing()">Старт 4-7-8</button>
+
+            <div>
+                <div class="section-title" data-i18n="voice_of_will">Голос Воли</div>
+                <div class="player">
+                    <div class="player-main">
+                        <button class="player-btn" onclick="changeTrack(-1)">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+                        </button>
+                        <button class="player-play" id="playBtn" onclick="toggleAudio()"></button>
+                        <button class="player-btn" onclick="changeTrack(1)">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+                        </button>
+                        <div class="player-meta">
+                            <div id="trackName" data-i18n="no_data">Нет данных</div>
+                            <div id="trackTime">0:00 / 0:00</div>
+                        </div>
+                    </div>
+                    <div class="player-progress" id="progressBar" onclick="seekAudio(event)">
+                        <div class="player-progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="player-volume">
+                        <span data-i18n="volume">Громкость</span>
+                        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.8">
+                        <span id="volValue">80%</span>
+                    </div>
+                    <div class="track-list" id="trackListContainer"></div>
+                    <button class="btn btn-full" onclick="scanFolder()" data-i18n="scan_folder" style="margin-top: 10px;">Сканировать папку</button>
+                    <audio id="arsenAudio"></audio>
+                </div>
+            </div>
         </div>
-        <div class="section-title" style="margin-top: 20px;">Шок-Протокол</div>
-        <p class="shock-desc">Экстренный выброс дофамина и адреналина. Имитация ледяного душа. Мгновенный буст без отката.</p>
-        <button class="btn-shock" onclick="activateShock()">Активировать шок</button>
-    </aside>
 
-    <footer>
-        <span>SYSTEM v7.0 // PREMIUM BUILD</span>
-        <span id="clock">00:00</span>
-    </footer>
-</div>
+        <div class="panel center-panel">
+            <div class="rank-block">
+                <div class="rank-label" data-i18n="current_status">Текущий статус</div>
+                <div class="rank-value" id="rankDisplay">Хаос</div>
+                <div class="rank-line"><div class="rank-fill" id="rankProgress"></div></div>
+            </div>
 
-<audio id="arsenAudio"></audio>
-<script src="script.js"></script>
+            <div class="day-counter">
+                <div class="day-number" id="dayNumber">1</div>
+                <div class="day-label" data-i18n="day_in_matrix">День в Матрице</div>
+            </div>
+
+            <div>
+                <div class="section-title" data-i18n="protocols">Протоколы</div>
+                <div class="add-task">
+                    <input type="text" id="taskInput" placeholder="Добавить новый протокол..." onkeypress="handleKeyPress(event)">
+                    <button class="btn btn-primary" onclick="addHabit()" data-i18n="add">Добавить</button>
+                </div>
+                <ul class="habit-list" id="habitList"></ul>
+            </div>
+
+            <button class="btn btn-god-mode btn-full" onclick="toggleGodMode(true)" style="margin-top: 20px;">
+                ⚡ ВОЙТИ В РЕЖИМ ГЛУБОКОЙ РАБОТЫ (90 МИН)
+            </button>
+        </div>
+
+        <div class="panel right-panel">
+            <div class="breath-block">
+                <div class="section-title" data-i18n="parasympathetic">Парасимпатика</div>
+                <div class="breath-circle-wrap">
+                    <div class="breath-circle" id="breathCore"></div>
+                    <div class="breath-label" id="breathText" data-i18n="ready">Готов</div>
+                    <div class="breath-timer" id="breathTimer"></div>
+                </div>
+                <button class="btn btn-primary" id="breathBtn" onclick="toggleBreathing()" data-i18n="start_478">Старт 4-7-8</button>
+            </div>
+        </div>
+
+        <footer>
+            <span>© Architecture of Will</span>
+            <span id="clock">00:00</span>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
