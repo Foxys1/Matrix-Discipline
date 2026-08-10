@@ -37,6 +37,9 @@ The app helps you implement healthy habits (early rising, cold showers, digital 
 
 The project is created for personal motivation and strict self‑control. Your journey begins now.
 
+> **Why is the archive ~553 MB?**
+> The app works **completely offline** and doesn't rely on cloud servers. The size is due to bundled high-quality audio files (motivational podcasts by Arsen Markaryan) and visual assets. No subscriptions or extra downloads required — it's a fully self-contained "all-in-one" tool.
+
 ---
 
 # Матрица дисциплины / Архитектура Воли
@@ -77,3 +80,6 @@ The project is created for personal motivation and strict self‑control. Your j
 *(Аудио и фотографии Мастера уже встроены – ничего дополнительно скачивать не нужно.)*
 
 Проект создан для личной мотивации и строгого самоконтроля. Ваш путь начинается сейчас.
+
+> **Почему архив весит ~553 МБ?**
+> Приложение работает **полностью офлайн** и не зависит от серверов. Весь объём — это встроенные высококачественные аудиофайлы, мотивационные подкасты Арсена Маркаряна и графические ассеты. Никаких подписок, облаков и дополнительных скачиваний. Вы получаете готовый автономный инструмент «всё-в-одном».
