@@ -1,6 +1,6 @@
 {
   "name": "matrix-discipline",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "description": "Десктопное приложение для жесткого самоконтроля и трекинга привычек.",
   "main": "main.js",
   "scripts": {
