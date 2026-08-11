@@ -1,4 +1,10 @@
 # Discipline Matrix / Architecture of Will
+<img width="1366" height="768" alt="1" src="https://github.com/user-attachments/assets/e725289a-4e59-467c-b2af-9c42c8c2def2" />
+<img width="1366" height="768" alt="2" src="https://github.com/user-attachments/assets/32734ed5-08ce-4ffc-8bd0-9d8b5984c49c" />
+<img width="1366" height="768" alt="3" src="https://github.com/user-attachments/assets/ccfb050a-ebc0-4fb6-85ac-d4148f8c566f" />
+<img width="1366" height="768" alt="4" src="https://github.com/user-attachments/assets/835a7354-833a-4fc8-9b6c-a305233fe0e9" />
+<img width="1366" height="768" alt="5" src="https://github.com/user-attachments/assets/3b304c35-5dfc-4bf8-bff9-aeb7acfa810b" />
+
 
 **A desktop application for those who are tired of drifting and seek strict control over habits, discipline, and motivation. No internet, no registration – everything works offline. Your data stays only on your computer.**
 
@@ -7,7 +13,15 @@ The app helps you implement healthy habits (early rising, cold showers, digital 
 
 ---
 
-**Key features of version 1.2:**
+**What's new in v1.3 "Foxys1 Edition":**
+
+- **9 languages** – added Español, Deutsch and Français to the original six.
+- **4 interface themes** – Gold, Crimson, Emerald and Ice. Switch with the ◐ button in the header; your choice is remembered.
+- **Penalty feedback** – the stat bars visibly shake when you break or delete a protocol. Punishment is felt.
+- **Fully translated system** – God Mode, toasts and milestone messages now speak your language.
+- **Foxys1 signature** – the author's mark (Ƒ) in the footer.
+
+**Key features:**
 
 - **Smart Onboarding** – On first launch, answer 4 questions about sleep, screen time, addictions, and physical activity. The system calculates your starting **«Chaos Level»** and automatically suggests initial protocols tailored to your lifestyle.
 
@@ -25,15 +39,15 @@ The app helps you implement healthy habits (early rising, cold showers, digital 
 
 - **Premium Interface** – Strict dark design, smooth «Aurora» gradient animations, subtle particle effects, tactile button feedback, and a progress scroll bar. Every interaction feels deliberate.
 
-- **Multi‑language Support** – Available in 6 languages: Russian, English, Japanese, Chinese, Uzbek, and Romanian. Switch at any time.
+- **Multi‑language Support** – Available in 9 languages: Russian, English, Japanese, Chinese, Uzbek, Romanian, Spanish, German and French. Switch at any time.
 
 ---
 
 **How to install and run (Windows):**  
-1. Download `Matrix Discipline.zip` from the Releases section.  
+1. Download `MatrixDiscipline.v1.3.zip` from the Releases section.  
 2. Extract the archive to any folder.  
 3. Run `MatrixDiscipline.exe`.  
-*(All Master’s audio and photos are already built in – no extra downloads.)*
+*(All Master's audio and photos are already built in – no extra downloads.)*
 
 The project is created for personal motivation and strict self‑control. Your journey begins now.
 
@@ -51,11 +65,19 @@ The project is created for personal motivation and strict self‑control. Your j
 
 ---
 
-**Ключевые особенности версии 1.2:**
+**Что нового в v1.3 «Foxys1 Edition»:**
+
+- **9 языков** – к исходным шести добавлены испанский, немецкий и французский.
+- **4 темы оформления** – Gold, Crimson, Emerald и Ice. Переключение кнопкой ◐ в шапке, выбор запоминается.
+- **Ощутимые штрафы** – шкалы статистики заметно трясутся, когда ты срываешь или удаляешь протокол. Наказание чувствуется.
+- **Полностью переведённая система** – God Mode, тосты и сообщения о вехах говорят на твоём языке.
+- **Подпись автора** – фирменный знак (Ƒ) Foxys1 в футере.
+
+**Ключевые особенности:**
 
 - **Интеллектуальный онбординг** – при первом запуске вы отвечаете на 4 вопроса о сне, экранном времени, зависимостях и спорте. Система вычисляет ваш стартовый **«Уровень Хаоса»** и автоматически предлагает протоколы, подходящие именно вам.
 
-- **Трекер протоколов с сериями (Streak)** – ставьте ежедневные задачи и отмечайте их выполнение. У каждой задачи свой счётчик непрерывных дней – вы куёте цепочки побед.
+- **Трекер протоколов с сериями (Streak)** – ставьте ежедневные задачи и отмечайте выполнение. У каждой задачи свой счётчик непрерывных дней – вы куёте цепочки побед.
 
 - **Система рангов** – ваш прогресс отображается в титулах:  
   *Хаос → Выживающий → Воин → Архитектор Воли → Правитель Судьбы*.  
@@ -69,12 +91,12 @@ The project is created for personal motivation and strict self‑control. Your j
 
 - **Премиальный интерфейс** – строгий тёмный дизайн, плавные анимации «Северного сияния», тонкие эффекты частиц, тактильный отклик кнопок, индикатор прокрутки. Каждое взаимодействие – осмысленно.
 
-- **Поддержка нескольких языков** – доступно 6 языков: русский, английский, японский, китайский, узбекский, румынский. Переключение в один клик.
+- **Поддержка нескольких языков** – доступно 9 языков: русский, английский, японский, китайский, узбекский, румынский, испанский, немецкий и французский. Переключение в один клик.
 
 ---
 
 **Как установить и запустить (Windows):**  
-1. Скачайте `Matrix Discipline.zip` из раздела «Релизы».  
+1. Скачайте `MatrixDiscipline.v1.3.zip` из раздела «Релизы».  
 2. Распакуйте архив в любую папку.  
 3. Запустите `MatrixDiscipline.exe`.  
 *(Аудио и фотографии Мастера уже встроены – ничего дополнительно скачивать не нужно.)*
@@ -83,3 +105,7 @@ The project is created for personal motivation and strict self‑control. Your j
 
 > **Почему архив весит ~553 МБ?**
 > Приложение работает **полностью офлайн** и не зависит от серверов. Весь объём — это встроенные высококачественные аудиофайлы, мотивационные подкасты Арсена Маркаряна и графические ассеты. Никаких подписок, облаков и дополнительных скачиваний. Вы получаете готовый автономный инструмент «всё-в-одном».
+
+---
+
+© 2026 **Foxys1** · MIT License
