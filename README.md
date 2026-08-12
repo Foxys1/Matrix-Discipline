@@ -1,9 +1,4 @@
 # Discipline Matrix / Architecture of Will
-<img width="1366" height="768" alt="1" src="https://github.com/user-attachments/assets/e725289a-4e59-467c-b2af-9c42c8c2def2" />
-<img width="1366" height="768" alt="2" src="https://github.com/user-attachments/assets/32734ed5-08ce-4ffc-8bd0-9d8b5984c49c" />
-<img width="1366" height="768" alt="3" src="https://github.com/user-attachments/assets/ccfb050a-ebc0-4fb6-85ac-d4148f8c566f" />
-<img width="1366" height="768" alt="4" src="https://github.com/user-attachments/assets/835a7354-833a-4fc8-9b6c-a305233fe0e9" />
-<img width="1366" height="768" alt="5" src="https://github.com/user-attachments/assets/3b304c35-5dfc-4bf8-bff9-aeb7acfa810b" />
 
 
 **A desktop application for those who are tired of drifting and seek strict control over habits, discipline, and motivation. No internet, no registration – everything works offline. Your data stays only on your computer.**
@@ -13,13 +8,24 @@ The app helps you implement healthy habits (early rising, cold showers, digital 
 
 ---
 
-**What's new in v1.3 "Foxys1 Edition":**
+**What's new in v1.5 "Foxys1 Edition · Settings":**
 
+- **Unified Settings menu** – a single gear button in the header opens language selection (9 flags) and theme selection (4 swatches). The strict look stays clean.
+- **Iron Mode (IRON)** – a shield button next to the gear. Once enabled, you cannot delete protocols or uncheck completed ones until the next day. No retreat.
 - **9 languages** – added Español, Deutsch and Français to the original six.
-- **4 interface themes** – Gold, Crimson, Emerald and Ice. Switch with the ◐ button in the header; your choice is remembered.
-- **Penalty feedback** – the stat bars visibly shake when you break or delete a protocol. Punishment is felt.
-- **Fully translated system** – God Mode, toasts and milestone messages now speak your language.
+- **4 interface themes** – Gold, Crimson, Emerald and Ice.
+- **Penalty feedback** – the stat bars visibly shake when you break or delete a protocol.
 - **Foxys1 signature** – the author's mark (Ƒ) in the footer.
+- **Bug fixes** – day-counter math, splash title spacing, UZ/RO typos.
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/439ff05b-d8c0-4f74-b1dd-3cc220cb46c2" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/db2f235b-6416-4f81-a824-86d604bc7762" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/7a390ae2-6fce-4eb2-9bab-98aaa26662e6" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/64efab52-bef6-438e-a3c4-0b6202894c34" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/c1621444-49ca-4400-aeac-ff30263c17f8" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/3d4f3b4d-13fe-44f0-a962-70d3a1b26e70" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/0562a33b-b203-44ba-81a2-1cd171d4eda8" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/594260b9-a3e5-4c6c-acba-b6a1f53e7f95" />
 
 **Key features:**
 
@@ -37,6 +43,8 @@ The app helps you implement healthy habits (early rising, cold showers, digital 
 
 - **Built‑in Media Player** – Includes motivational podcasts by Arsen Markaryan. You can listen during work or training. Drag‑and‑drop your own audio files or images – the app accepts them instantly.
 
+- **Settings & Customization** – One gear menu for language (hand‑drawn CSS flags) and theme (color swatches). Iron Mode for days when you need zero retreat.
+
 - **Premium Interface** – Strict dark design, smooth «Aurora» gradient animations, subtle particle effects, tactile button feedback, and a progress scroll bar. Every interaction feels deliberate.
 
 - **Multi‑language Support** – Available in 9 languages: Russian, English, Japanese, Chinese, Uzbek, Romanian, Spanish, German and French. Switch at any time.
@@ -44,7 +52,7 @@ The app helps you implement healthy habits (early rising, cold showers, digital 
 ---
 
 **How to install and run (Windows):**  
-1. Download `MatrixDiscipline.v1.3.zip` from the Releases section.  
+1. Download `MatrixDiscipline.v1.5.zip` from the Releases section.  
 2. Extract the archive to any folder.  
 3. Run `MatrixDiscipline.exe`.  
 *(All Master's audio and photos are already built in – no extra downloads.)*
@@ -65,13 +73,16 @@ The project is created for personal motivation and strict self‑control. Your j
 
 ---
 
-**Что нового в v1.3 «Foxys1 Edition»:**
+**Что нового в v1.5 «Foxys1 Edition · Settings»:**
 
+- **Единое меню настроек** – одна шестерёнка в шапке открывает выбор языка (9 флагов) и темы (4 свотча). Строгий вид остаётся чистым.
+- **Железный режим (IRON)** – кнопка‑щит рядом с шестерёнкой. Включил – и до конца дня нельзя удалять протоколы и снимать галочки. Отступлений нет.
 - **9 языков** – к исходным шести добавлены испанский, немецкий и французский.
-- **4 темы оформления** – Gold, Crimson, Emerald и Ice. Переключение кнопкой ◐ в шапке, выбор запоминается.
-- **Ощутимые штрафы** – шкалы статистики заметно трясутся, когда ты срываешь или удаляешь протокол. Наказание чувствуется.
-- **Полностью переведённая система** – God Mode, тосты и сообщения о вехах говорят на твоём языке.
+- **4 темы оформления** – Gold, Crimson, Emerald и Ice.
+- **Ощутимые штрафы** – шкалы статистики заметно трясутся, когда ты срываешь или удаляешь протокол.
 - **Подпись автора** – фирменный знак (Ƒ) Foxys1 в футере.
+- **Фиксы** – расчёт счётчика дней, пробел в заголовке сплэша, опечатки в узбекском и румынском.
+
 
 **Ключевые особенности:**
 
@@ -89,6 +100,8 @@ The project is created for personal motivation and strict self‑control. Your j
 
 - **Встроенный медиаплеер** – включает мотивационные подкасты Арсена Маркаряна. Можно слушать во время работы или тренировки. Перетащите свои аудиофайлы или изображения – приложение примет их мгновенно.
 
+- **Настройки и кастомизация** – одно меню‑шестерёнка для языка (флаги, нарисованные на CSS) и темы (цветные свотчи). Железный режим – для дней, когда нужно ноль отступлений.
+
 - **Премиальный интерфейс** – строгий тёмный дизайн, плавные анимации «Северного сияния», тонкие эффекты частиц, тактильный отклик кнопок, индикатор прокрутки. Каждое взаимодействие – осмысленно.
 
 - **Поддержка нескольких языков** – доступно 9 языков: русский, английский, японский, китайский, узбекский, румынский, испанский, немецкий и французский. Переключение в один клик.
@@ -96,7 +109,7 @@ The project is created for personal motivation and strict self‑control. Your j
 ---
 
 **Как установить и запустить (Windows):**  
-1. Скачайте `MatrixDiscipline.v1.3.zip` из раздела «Релизы».  
+1. Скачайте `MatrixDiscipline.v1.5.zip` из раздела «Релизы».  
 2. Распакуйте архив в любую папку.  
 3. Запустите `MatrixDiscipline.exe`.  
 *(Аудио и фотографии Мастера уже встроены – ничего дополнительно скачивать не нужно.)*
